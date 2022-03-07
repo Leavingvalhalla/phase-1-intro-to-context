@@ -40,7 +40,7 @@ function createTimeOutEvent(record, event) {
 }
 
 function hoursWorkedOnDate(record, date) {
-  const timeIn = record.timeInEvents.find((e) => e.date.split(' ')[0] == date);
+  const timeIn = record.timeInEvents.find((e) => e.date.split(' ')[0]);
   const timeOut = record.timeOutEvents.find(
     (e) => e.date.split(' ')[0] == date
   );
